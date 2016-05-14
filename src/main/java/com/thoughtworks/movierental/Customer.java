@@ -37,7 +37,7 @@ class Customer {
   private double totalAmount() {
     double total = 0;
     for (Rental rental : rentals) {
-      total += rental.rentalAmount();
+      total += rental.amount();
     }
     return total;
   }

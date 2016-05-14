@@ -1,7 +1,5 @@
 package com.thoughtworks.movierental;
 
-import java.beans.*;
-
 /**
  * Created by kanader on 5/13/2016.
  */
@@ -11,7 +9,7 @@ public class HTMLStatement extends Statement
     @Override
     protected String lineItem(Rental rental) {
         return  rental.getMovie().getTitle() + " " +
-                rental.rentalAmount() + "</br>\n";
+                rental.amount() + "</br>\n";
     }
 
     @Override

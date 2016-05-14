@@ -1,7 +1,5 @@
 package com.thoughtworks.movierental;
 
-import java.util.List;
-
 /**
  * Created by kanader on 5/13/2016.
  */
@@ -10,7 +8,7 @@ public class TextStatement extends Statement {
     @Override
     protected String lineItem(Rental rental) {
         return "\t" + rental.getMovie().getTitle() + "\t" +
-                rental.rentalAmount() + "\n";
+                rental.amount() + "\n";
     }
 
     @Override
